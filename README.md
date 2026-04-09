@@ -41,42 +41,46 @@
 ├── .env.example         # 环境变量配置模板
 ├── requirements.txt     # Python 依赖清单
 └── plan.md              # 架构设计与演进文档
+```
 
-🚀 快速启动 (Quick Start)
-1. 克隆项目
-Bash
+## 🚀 快速启动 (Quick Start)
+
+### 1. 克隆项目
+```bash
 git clone [https://github.com/zsd1024/multi-agent-travel-planner.git](https://github.com/zsd1024/multi-agent-travel-planner.git)
 cd multi-agent-travel-planner/python
-2. 环境配置
-建议使用 Python 虚拟环境：
+```
 
-Bash
+### 2. 环境配置
+建议使用 Python 虚拟环境：
+```bash
 python -m venv venv
 source venv/bin/activate  # Mac/Linux
 # venv\Scripts\activate   # Windows
 
 pip install -r ../requirements.txt
-3. 配置密钥 (API Keys)
+```
+
+### 3. 配置密钥 (API Keys)
 复制环境变量模板并填入你的专属 Key：
-
-Bash
+```bash
 cp .env.example .env
-在 .env 文件中配置以下内容：
+```
+在 `.env` 文件中配置以下内容：
+* `LLM_API_KEY`: 你的大模型 API 密钥
+* `AMAP_API_KEY`: 高德开放平台 Web 服务 Key
+* `TAVILY_API_KEY`: Tavily Search Key
 
-LLM_API_KEY: 你的大模型 API 密钥
-
-AMAP_API_KEY: 高德开放平台 Web 服务 Key
-
-TAVILY_API_KEY: Tavily Search Key
-
-4. 启动服务
-Bash
+### 4. 启动服务
+```bash
 streamlit run ui/streamlit_app.py
-🗺️ 未来演进方向 (TODO)
-[ ] 接入真实航班/酒店预订系统 (OTA 平台 API)
+```
 
-[ ] 支持多轮对话中的局部行程修改 (如：“把第二天的行程换成室内活动”)
+## 🗺️ 未来演进方向 (TODO)
 
-[ ] 导出行程为 PDF 或日历格式 (.ics)
+- [ ] 接入真实航班/酒店预订系统 (OTA 平台 API)
+- [ ] 支持多轮对话中的局部行程修改 (如：“把第二天的行程换成室内活动”)
+- [ ] 导出行程为 PDF 或日历格式 (.ics)
 
-Developed by zsd1024. Welcome to fork and contribute!
+---
+*Developed by zsd1024. Welcome to fork and contribute!*
