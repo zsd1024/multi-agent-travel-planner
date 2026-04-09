@@ -76,6 +76,10 @@ cp .env.example .env
 streamlit run ui/streamlit_app.py
 ```
 
+运行示例：
+<img width="2557" height="1244" alt="image" src="https://github.com/user-attachments/assets/dd035a5e-9da1-4833-b32c-0d382d305031" />
+
+
 ## 🗺️ 未来演进方向 (TODO)
 
 - [ ] 接入真实航班/酒店预订系统 (OTA 平台 API)
